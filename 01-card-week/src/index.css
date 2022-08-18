@@ -101,7 +101,6 @@
     font-size: 18px;
     text-align: center;
     color: #42940F;
-    cursor: pointer;
 }
 
 .card__button_disabled {
@@ -121,12 +120,13 @@
     color: #FFFFFF;
 }
 
-.card__button:hover {
+.card__button:not([disabled]):hover {
     background: #42940F;
     color: #FFFFFF;
+    cursor: pointer
 }
 
-.card__button:active {
+.card__button:not([disabled]):active {
     background: #1F5200;
     border: 2px solid #1F5200;
     color: #FFFFFF;
